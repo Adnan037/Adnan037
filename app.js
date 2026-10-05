@@ -61,7 +61,8 @@
           project.hidden = filter !== 'all' && project.dataset.category !== filter;
           if (!project.hidden) visible++;
         });
-        $('#filter-status').textContent = `Showing ${visible} ${visible === 1 ? 'project' : 'projects'}${filter === 'all' ? '.' : filter === 'it' ? ' in IT & operations.' : ' in AI & automation.'}`;
+        const filterNames = { it: 'IT & operations', business: 'business websites', ai: 'AI & automation' };
+        $('#filter-status').textContent = `Showing ${visible} ${visible === 1 ? 'project' : 'projects'}${filter === 'all' ? '.' : ` in ${filterNames[filter]}.`}`;
       });
     });
 
@@ -77,15 +78,28 @@
       unified: {
         category: 'IT OPERATIONS / BUSINESS PLATFORM',
         title: 'Unified IT Ops',
-        status: 'Live project',
-        intro: 'A business platform I’ve built as part of my move from supporting IT systems to creating tools for business operations.',
+        status: 'Live · access restricted',
+        intro: 'A private IT operations workspace for Office Connect. The live site requires company sign-in.',
         sections: [
-          { title: 'The background', text: 'My daily work spans infrastructure, network security, Microsoft 365, asset governance, and user support. Unified IT Ops is part of my effort to turn that practical perspective into business platforms.' },
-          { title: 'Explore the platform', text: 'The live project is available through the link below. The dashboard shown in this portfolio is an illustration made for the project showcase.' },
-          { title: 'What comes next', text: 'I’m continuing to build more platforms while exploring how AI assistants, analytics, and support automation can help businesses work more effectively.' }
+          { title: 'What it does today', text: 'Brings system inventory, device reporting, equipment, software accounts, and connection setup into one workspace. Native desktop agents can report hardware and usage to authorized company accounts.' },
+          { title: 'Access and integration', text: 'The Cloudflare-hosted site is restricted to authorized company users. Vendor data synchronization depends on a separately configured and verified API connector; opening an admin sign-in page alone is not a connection.' },
+          { title: 'Current stage', text: 'This is an active project. The dashboard graphic in this portfolio is an illustration; protection and mobile-agent features remain future work.' }
         ],
-        url: 'https://office-connect-unified-it.spstechnicalme.chatgpt.site/',
-        linkLabel: 'Visit live platform'
+        url: 'https://unified-it-ops.ak6335186.workers.dev/',
+        linkLabel: 'Visit company sign-in'
+      },
+      fragrances: {
+        category: 'BUSINESS WEBSITE / STOREFRONT',
+        title: 'ALSAAD FRAGRANCES',
+        status: 'Live website',
+        intro: 'A fragrance brand website hosted on Cloudflare Pages, with product discovery and a shopping experience in progress.',
+        sections: [
+          { title: 'What visitors can use', text: 'Browse the product galleries, save favourites, use the shopping bag, and open a WhatsApp enquiry.' },
+          { title: 'Commerce status', text: 'Online payment and order email delivery are not active yet; their backend requires merchant and service configuration. The site does not claim completed live checkout.' },
+          { title: 'Source and hosting', text: 'The storefront is deployed from a private GitHub repository to Cloudflare Pages. The live site is public.' }
+        ],
+        url: 'https://alsaad-fragrances.pages.dev/',
+        linkLabel: 'Visit live website'
       },
       assistant: {
         category: 'AI ASSISTANTS / PROJECT DIRECTION',

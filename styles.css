@@ -175,6 +175,16 @@ h2{font-size:38px;line-height:1.24;letter-spacing:-1.7px;font-weight:550;margin:
 .project-detail-actions{margin-top:16px;padding-top:12px;border-top:1px solid #e9eddf}
 .project-detail-actions .plain-button{font-size:9px;color:#788d67}
 .plain-button .icon{width:14px;height:14px}
+.fragrance-art{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 70%,#dfc9ad 0,#b7a084 37%,#6b574a 100%);color:#fff8ed}
+.fragrance-art::after{content:"";position:absolute;width:260px;height:28px;bottom:24px;border-radius:50%;background:#3e302a55;filter:blur(13px)}
+.fragrance-art-label,.fragrance-art-foot{position:absolute;z-index:2;left:28px;right:28px;font-size:8px;letter-spacing:2px;font-weight:700}
+.fragrance-art-label{top:24px}.fragrance-art-foot{bottom:23px;font-size:7px;letter-spacing:1.2px;text-align:right;font-weight:500}
+.fragrance-bottle{position:relative;z-index:1;width:112px;height:180px;margin-top:20px;filter:drop-shadow(12px 15px 12px #38261d66)}
+.bottle-cap{position:absolute;top:0;left:39px;width:34px;height:34px;border-radius:4px 4px 1px 1px;background:linear-gradient(90deg,#342b27,#786a5d 48%,#302823);box-shadow:inset 2px 0 #ffffff25}
+.bottle-neck{position:absolute;top:33px;left:46px;width:20px;height:14px;background:linear-gradient(90deg,#b49a68,#e7d5a8,#9b7b4b)}
+.bottle-body{position:absolute;top:46px;left:0;width:112px;height:129px;display:grid;place-items:center;border:2px solid #ffffff77;border-radius:10px 10px 15px 15px;background:linear-gradient(110deg,#ffffff83 0,#e5d4b189 22%,#6b4735c9 57%,#302519e8 100%);box-shadow:inset 6px 0 12px #ffffff42,inset -9px 0 15px #180f0d55}
+.bottle-body>span{display:block;width:90px;padding:16px 5px;border:1px solid #e7d6b68f;text-align:center;font-family:Georgia,serif;font-size:15px;letter-spacing:1px;background:#3a281d85}
+.bottle-body small{display:block;margin-top:5px;font-family:inherit;font-size:6px;letter-spacing:2px}
 .assistant-art{background:#e8e8f0;padding:24px 32px 17px}
 .small-art-heading{display:flex;align-items:center;gap:8px;font-size:7px;letter-spacing:1px;font-weight:650;color:#8b899e}
 .art-small-icon{display:grid;place-items:center}
