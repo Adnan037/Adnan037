@@ -81,9 +81,9 @@
         status: 'Live · access restricted',
         intro: 'A private IT operations workspace for Office Connect. The live site requires company sign-in.',
         sections: [
-          { title: 'What it does today', text: 'Brings system inventory, device reporting, equipment, software accounts, and connection setup into one workspace. Native desktop agents can report hardware and usage to authorized company accounts.' },
+          { title: 'What it does today', text: 'Brings system inventory, device reporting, equipment, software accounts, and connection setup into one workspace. Native desktop agents and an Android inventory app report device hardware and usage to authorized company accounts.' },
           { title: 'Access and integration', text: 'The Cloudflare-hosted site is restricted to authorized company users. Vendor data synchronization depends on a separately configured and verified API connector; opening an admin sign-in page alone is not a connection.' },
-          { title: 'Current stage', text: 'This is an active project. The dashboard graphic in this portfolio is an illustration; protection and mobile-agent features remain future work.' }
+          { title: 'Current stage', text: 'This is an active project. The dashboard graphic in this portfolio is an illustration. Android inventory reporting is available for enrolled devices; iOS support and protection features remain future work.' }
         ],
         url: 'https://unified-it-ops.ak6335186.workers.dev/',
         linkLabel: 'Visit company sign-in'

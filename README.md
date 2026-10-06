@@ -8,7 +8,7 @@ I'm an IT support and network security professional in Dubai, building practical
 
 | Project | What I'm building | Live site | Source |
 | --- | --- | --- | --- |
-| **Unified IT Ops** | A private IT operations workspace for system and equipment inventory, device reporting, software accounts, and verified platform connections. Company sign-in is required. | [Open company sign-in](https://unified-it-ops.ak6335186.workers.dev/) | [Private repository](https://github.com/Adnan037/unified-it-ops) |
+| **Unified IT Ops** | A private IT operations workspace for system and equipment inventory, software accounts, verified platform connections, and live device reporting from desktop agents and a native Android inventory app. Company sign-in is required. | [Open company sign-in](https://unified-it-ops.ak6335186.workers.dev/) | [Private repository](https://github.com/Adnan037/unified-it-ops) |
 | **ALSAAD FRAGRANCES** | A fragrance storefront with product galleries, favourites, a shopping bag, and WhatsApp enquiries. Online payment activation is still in progress. | [Visit the website](https://alsaad-fragrances.pages.dev/) | [Private repository](https://github.com/Adnan037/alsaad-fragrances) |
 
 I am also exploring AI support assistants and operational analytics. Those are project directions, not released products.
