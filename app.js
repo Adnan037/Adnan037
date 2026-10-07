@@ -83,7 +83,8 @@
         sections: [
           { title: 'What it does today', text: 'Brings system inventory, device reporting, equipment, software accounts, and connection setup into one workspace. Native desktop agents and an Android inventory app report device hardware and usage to authorized company accounts.' },
           { title: 'Access and integration', text: 'The Cloudflare-hosted site is restricted to authorized company users. Vendor data synchronization depends on a separately configured and verified API connector; opening an admin sign-in page alone is not a connection.' },
-          { title: 'Current stage', text: 'This is an active project. The dashboard graphic in this portfolio is an illustration. Android inventory reporting is available for enrolled devices; iOS support and protection features remain future work.' }
+          { title: 'Windows desktop controls', text: 'Released agent version 0.5.5 adds desktop and notification-area controls, last-reported device readings, installed antivirus status, and local Microsoft Defender quick-scan and signature-update actions. These controls use an installed protection engine; they do not represent a standalone antivirus or EDR product.' },
+          { title: 'Current stage', text: 'This is an active project. The dashboard graphic in this portfolio is an illustration. Android inventory reporting is available for enrolled devices. macOS/Linux have optional ClamAV command support; matching security interfaces, Android antivirus, iOS support, and full AV/EDR remain unfinished.' }
         ],
         url: 'https://unified-it-ops.ak6335186.workers.dev/',
         linkLabel: 'Visit company sign-in'
