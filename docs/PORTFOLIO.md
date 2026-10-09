@@ -51,3 +51,11 @@ The font is distributed under the SIL Open Font License, included in `assets/FON
 ## Validation
 
 Checked in Chromium at widths of 320, 375, 390, 650, 768, 850, 1024, and 1440 pixels, with no horizontal overflow. Browser checks passed for project filters, dialog focus and Escape handling, experience entries, clipboard copying, email draft generation, the original resume download, and the portable HTML with the browser offline. No JavaScript errors were recorded. Automated axe-core audits reported no WCAG 2 A/AA or WCAG 2.1 AA violations in the desktop, expanded experience, project dialog, and mobile navigation states. Automated audits do not cover every aspect of accessibility.
+
+
+
+## Unified IT Ops update — 10 October 2026
+
+The project card, overview dialog and profile README now describe Windows release 0.5.21: encrypted native app-to-app remote support, approval for new technicians, a visible Stop sharing control, a medium resizable/minimizable chat panel, immediate message delivery acknowledgement and chat opening/restoration on new incoming messages. Device monitoring and installed-engine security controls remain bundled in the same application.
+
+The independent Windows updater checks published releases every five minutes, verifies the installer and waits for host and technician sessions to finish. Existing enrollment and trusted-technician settings are retained. Older installed versions receive 0.5.21 through their original daily updater. Automated native chat, session-lock and artifact-integrity checks passed; two-PC chat and actual SYSTEM update rollout still need live confirmation. These claims replace the previous release description; historical notes above are retained as history. No private identifiers, screen recordings, access codes or credentials are published here.
