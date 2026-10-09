@@ -81,7 +81,8 @@
         status: 'Live · access restricted',
         intro: 'A private IT operations workspace for Office Connect. The live site requires company sign-in.',
         sections: [
-          { title: 'What it does today', text: 'Brings system inventory, device reporting, equipment, software accounts, and connection setup into one workspace. Native desktop agents and an Android inventory app report device hardware and usage to authorized company accounts.' },
+          { title: 'What it does today', text: 'Brings system inventory, device reporting, equipment, software accounts, connection setup, and support cases into one workspace. Native desktop agents and an Android inventory app report device hardware and usage to authorized company accounts.' },
+          { title: 'Support desk', text: 'Authorized requesters can create and track tickets, attach supporting files, review resolution details, and acknowledge or reopen a case. Company administrators manage cases, user access, work estimates, and resolution notes. Remote screen control and file transfer are still in development.' },
           { title: 'Access and integration', text: 'The Cloudflare-hosted site is restricted to authorized company users. Vendor data synchronization depends on a separately configured and verified API connector; opening an admin sign-in page alone is not a connection.' },
           { title: 'Windows desktop controls', text: 'Released agent version 0.5.8 includes a dedicated native Windows tray app, desktop and notification-area controls, last-reported device readings, installed antivirus status, and local Microsoft Defender quick-scan and signature-update actions. These controls use an installed protection engine; they do not represent a standalone antivirus or EDR product.' },
           { title: 'Installation and updates', text: 'Desktop agents support automatic release updates. Windows release 0.5.8 restores missing uninstall files and Programs and Features registration, provides an in-app uninstall action with administrator approval, and preserves existing enrollment during installer repairs. Uninstalling the local agent leaves company inventory records separate.' },
@@ -243,3 +244,4 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
   else init();
 })();
+
