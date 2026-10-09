@@ -17,9 +17,10 @@ const resume = (await readFile(resolve(root, 'assets/Adnan_Khan_Resume.pdf'))).t
 const favicon = (await readFile(resolve(root, 'assets/favicon.svg'))).toString('base64');
 css = css.replace('assets/manrope-latin-variable.woff2', `data:font/woff2;base64,${font}`);
 html = html.replace('<link rel="stylesheet" href="styles.css">', () => `<style>${css}</style>`)
-  .replace('<script src="app.js" defer></script>', () => `<script>${js}</script>`)
+  .replace(/<script src="app\.js(?:\?v=[0-9]+)?" defer><\/script>/, () => `<script>${js}</script>`)
   .replace(/href="assets\/Adnan_Khan_Resume.pdf"/g, () => `href="data:application/pdf;base64,${resume}"`)
   .replace('href="assets/favicon.svg"', () => `href="data:image/svg+xml;base64,${favicon}"`)
   .replace(/\s*<link rel="preload" href="assets\/manrope-latin-variable.woff2"[^>]+>/, '');
 await writeFile(resolve(out, 'Adnan_Khan_Portfolio.html'), html);
 console.log('Built dist/ and the standalone Adnan_Khan_Portfolio.html');
+
