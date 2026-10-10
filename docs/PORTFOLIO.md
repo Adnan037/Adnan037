@@ -1,4 +1,4 @@
-# Adnan Khan's portfolio — maintainer guide
+# Adnan Khan's portfolio â€” maintainer guide
 
 A complete, responsive portfolio for Adnan Khan, connecting professional IT and network security experience with an expanding interest in AI assistants, analytics, and business platforms.
 
@@ -54,28 +54,34 @@ Checked in Chromium at widths of 320, 375, 390, 650, 768, 850, 1024, and 1440 pi
 
 
 
-## Unified IT Ops update — 10 October 2026
+## Unified IT Ops update â€” 10 October 2026
 
 The project card, overview dialog and profile README now describe Windows release 0.5.21: encrypted native app-to-app remote support, approval for new technicians, a visible Stop sharing control, a medium resizable/minimizable chat panel, immediate message delivery acknowledgement and chat opening/restoration on new incoming messages. Device monitoring and installed-engine security controls remain bundled in the same application.
 
 The independent Windows updater checks published releases every five minutes, verifies the installer and waits for host and technician sessions to finish. Existing enrollment and trusted-technician settings are retained. Older installed versions receive 0.5.21 through their original daily updater. Automated native chat, session-lock and artifact-integrity checks passed; two-PC chat and actual SYSTEM update rollout still need live confirmation. These claims replace the previous release description; historical notes above are retained as history. No private identifiers, screen recordings, access codes or credentials are published here.
 
-## Microsoft 365 integration repair — 10 October 2026
+## Microsoft 365 integration repair â€” 10 October 2026
 
 Reproduced an OAuth callback failure in the actual Cloudflare workerd runtime: an unsupported fetch redirect mode prevented the token request from reaching Microsoft. Replaced it with manual redirect handling and explicit rejection, preserving credential isolation. Added runtime tests for form-encoded token exchange and authenticated Graph profile/license requests, including redirect rejection. Both successful and failed callback pages now remove authorization parameters from the address bar and show a branded result. All 113 application tests, TypeScript and production build passed. Microsoft's public endpoints were reached using credential-free fixtures. The user then confirmed a successful live company connection after replacing the Secret ID with the actual client secret Value. Follow-up improvements display safe OAuth categories and numeric Microsoft diagnostics, distinguish missing renewable access, and explain Value versus Secret ID in the setup form. Raw provider descriptions and credentials are never displayed or saved as diagnostics. This is a web repair and does not require a desktop reinstall.
 
 
-## Microsoft user and license analysis — 10 October 2026
+## Microsoft user and license analysis â€” 10 October 2026
 
 Unified IT Ops adds Analyze in Microsoft connection details and a dedicated company-scoped user, license and pricing page. Directory users (including unlicensed users), multiple assigned SKUs, included/disabled service entitlements, purchased/assigned/available seats and monthly cost allocation are listed. Contract prices are entered by the company because Graph does not return reseller billing prices. Annual per-seat prices normalize to monthly equivalents; unknown prices remain unknown and currencies are not combined. Search, license filters and formula-safe CSV export are available.
 
 Only owners and managers can read this directory snapshot. Additional delegated User.Read.All approval is explicitly requested through the existing Microsoft administrator sign-in flow; previous base license consent remains valid. Complete paginated results are stored outside general inventory, company-scoped with versioned prices. Refresh failures preserve the prior complete result; a shared lease prevents concurrent refresh-token rotation. Validation passed 124 application/runtime/UI tests, TypeScript and the production build. The real React interface was checked with synthetic data for user search, multi-license costs, price save updates and desktop/narrow responsive layout. Live company directory import requires the administrator's additional consent and remains unconfirmed. No private tenant data or actual company prices are published here. This web feature requires no native installer update.
 
 
-## Workspace controls and Windows 0.5.23 — 10 October 2026
+## Workspace controls and Windows 0.5.23 â€” 10 October 2026
 
 Company access adds real password account creation, role/name editing, password resets and access removal. Owner is displayed as Super Admin; configurable Admin rights are enforced on server routes. Manager retains records and designated approvals; Viewer remains read only. The Technician choice is removed for new accounts, with old assignments preserved until edited. Requester accounts stay separate.
 
 Support cases adds clickable live tickets, a shared company ticket sequence and editable fresh suggestions for manual ticket IDs. Remote Access Details uses an encrypted company directory, with inventory enrollment verified through the private gateway and host tokens checked before publishing credentials. Existing technician trust and host controls remain in force. Release 0.5.23 fixes the normal-user tray handoff using a separate signed, expiring enrollment proof; protected reporting tokens remain service-only. The directory fills after the first accepted inventory report following update; actual two-device rollout must be verified on the enrolled PCs.
 
 Microsoft pricing shows USD/AED equivalents at USD 1 = AED 3.6725 without adding duplicate converted totals; other currencies remain separate. Provider brand assets are bundled locally with provenance. Validation passed all 130 tests, TypeScript, the production build and Windows Go tests. Additional gateway RPC, ticket identity and currency tests pass. The actual React interface was reviewed with synthetic data for ticket defaults, provider logo loading, account rights and narrow-screen dialog boundaries. No company users, codes, tenant IDs or private inventory are published in this portfolio.
+
+## SharePoint storage and cursor stability — 10 October 2026
+
+Release 0.5.24 adds Licenses/Storage navigation below Microsoft Analyze’s header. Storage displays SharePoint D7 usage, allocated site quotas, files, activity and report dates. An on-demand site/library/folder browser lists metadata and visible sharing grants, named principals, inherited status and link audience. The feature requests additional delegated Reports.Read.All/Sites.Read.All approval. It does not alter permissions or download file contents. Allocated site quotas are not the shared tenant capacity, and delegated sharing results are not a complete effective-access audit.
+
+The remote host skips redundant SetCursorPos calls; the native viewer suppresses duplicate motion and cursor drawing and predicts its cursor locally. Windows unit checks passed, but actual cursor stability awaits two-PC confirmation. All 134 application/runtime/UI checks, TypeScript and production build passed. No real tenant report or additional consent was performed in this work session; live storage import requires company approval. Browser preview tooling timed out, so visual checks remain limited to server-rendered component validation. Only public-safe feature descriptions are published.

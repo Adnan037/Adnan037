@@ -78,16 +78,17 @@
       unified: {
         category: 'IT OPERATIONS / BUSINESS PLATFORM',
         title: 'Unified IT Ops',
-        status: 'Live · access restricted',
+        status: 'Live Â· access restricted',
         intro: 'A private IT operations workspace for Office Connect. The live site requires company sign-in.',
         sections: [
           { title: 'What it does today', text: 'Brings system inventory, device reporting, equipment, software accounts, connection setup, and support cases into one workspace. Native desktop agents and an Android inventory app report device hardware and usage to authorized company accounts.' },
           { title: 'Support desk', text: 'Authorized requesters can create and track tickets, attach supporting files, review resolution details, and acknowledge or reopen a case. Company administrators manage cases, user access, work estimates, and resolution notes. Live and manual tickets share company-scoped, sequential ticket IDs; the next manual ID is prefilled and editable. Clicking a live case opens its details and timeline. Windows app-to-app remote support provides encrypted screen sharing and mouse/keyboard control, with local approval for new technicians and a visible Stop sharing control. Ticket attachments provide file exchange.' },
           { title: 'Access and integration', text: 'The Cloudflare-hosted site is restricted to authorized company users. The Microsoft 365 connector uses company authorization, encrypted renewable credentials and verified Graph profile/license snapshots. Token exchange and Graph responses have regression tests in the Cloudflare runtime, including blocked credential redirects. Tenant authorization still requires a successful live sign-in. Opening an admin sign-in page alone is not a connection.' },
           { title: 'Microsoft license analysis', text: 'A dedicated Analyze page lists company users, assigned Microsoft 365 licenses and included or disabled service entitlements. Seat and cost graphs combine editable per-seat contract prices, monthly or annual billing, and USD/AED cost equivalents. Other currencies remain separate. User search, license filters and formula-safe CSV export support license reviews. The Super Admin and delegated Admins with connection rights control access; a Microsoft administrator approves the additional directory-read permission. Complete paginated snapshots are preserved when Microsoft throttles or fails. Tenant directory import still requires this additional live consent.' },
+          { title: 'SharePoint storage and access', text: 'Microsoft Analyze has separate Licenses and Storage pages. Storage lists site usage, allocated site quotas, activity and file counts from Microsoft reports, with a live library/file browser and visible sharing grants. Additional delegated read-only approval is required. Reports may lag; allocated site limits are not the shared tenant pool. Group and link audiences do not claim complete effective access for every user.' },
           { title: 'Company access and remote directory', text: 'Company accounts use email/password sign-in with Super Admin, configurable Admin, Manager and read-only Viewer access. Server checks enforce selected rights, account changes and password resets. A private, audited remote directory links inventory-enrolled Windows PCs to requesters and opens the installed support app. Remote codes are encrypted and verified against both host identity and inventory enrollment; existing technician trust and host controls remain in force. The background inventory service supplies a signed, expiring directory proof so the desktop app can publish without reading the protected reporting token. The directory populates after an accepted inventory report following the desktop update. Provider cards use locally stored brand logos without implying active integrations.' },
-          { title: 'Windows desktop controls', text: 'Windows release 0.5.23 bundles a native desktop and tray app, last-reported device readings, installed antivirus status, and local Microsoft Defender quick-scan and signature-update actions. A resizable session chat supports minimize, immediate messages and delivery acknowledgement; new messages open or restore the chat on either side. These controls use an installed protection engine; they do not represent a standalone antivirus or EDR product.' },
-          { title: 'Installation and updates', text: 'Windows 0.5.23 checks published releases every five minutes independently of device reports, verifies update hashes and defers installation while support sessions are active. Enrollment and approved technicians are preserved. Older apps bootstrap through their existing daily updater. The installer and chat controls have automated validation; live two-computer chat and SYSTEM update rollout remain to be confirmed. Uninstalling the local agent leaves company inventory records separate.' },
+          { title: 'Windows desktop controls', text: 'Windows release 0.5.24 bundles a native desktop and tray app, last-reported device readings, installed antivirus status, and local Microsoft Defender quick-scan and signature-update actions. A resizable session chat supports minimize, immediate messages and delivery acknowledgement; new messages open or restore the chat on either side. Release 0.5.24 suppresses redundant remote pointer movement and duplicate cursor drawing; the cursor change awaits confirmation on actual PCs. These controls use an installed protection engine; they do not represent a standalone antivirus or EDR product.' },
+          { title: 'Installation and updates', text: 'Windows 0.5.24 checks published releases every five minutes independently of device reports, verifies update hashes and defers installation while support sessions are active. Enrollment and approved technicians are preserved. Older apps bootstrap through their existing daily updater. The installer and chat controls have automated validation; live two-computer chat and SYSTEM update rollout remain to be confirmed. Uninstalling the local agent leaves company inventory records separate.' },
           { title: 'Current stage', text: 'This is an active project. The dashboard graphic in this portfolio is an illustration. Android inventory reporting is available for enrolled devices. macOS/Linux have optional ClamAV command support; matching security interfaces, Android antivirus, iOS support, and full AV/EDR remain unfinished.' }
         ],
         url: 'https://unified-it-ops.ak6335186.workers.dev/',
@@ -112,8 +113,8 @@
         status: 'Concept exploration',
         intro: 'A project direction that brings my background in technical support together with my interest in AI assistant engineering.',
         sections: [
-          { title: 'The question I’m exploring', text: 'How could an assistant help people find clear answers to common IT questions, understand the next troubleshooting step, and give an engineer useful context when human support is needed?' },
-          { title: 'Ideas for the project', items: ['A conversational interface for common support questions.', 'Guidance grounded in a business’s own support knowledge.', 'A clear handover to a support engineer when an issue needs investigation.'] },
+          { title: 'The question Iâ€™m exploring', text: 'How could an assistant help people find clear answers to common IT questions, understand the next troubleshooting step, and give an engineer useful context when human support is needed?' },
+          { title: 'Ideas for the project', items: ['A conversational interface for common support questions.', 'Guidance grounded in a businessâ€™s own support knowledge.', 'A clear handover to a support engineer when an issue needs investigation.'] },
           { title: 'Current stage', text: 'This is a concept for my developing AI portfolio. The interface in the project card is an illustration, and a working assistant is not linked yet.' }
         ]
       },
@@ -121,9 +122,9 @@
         category: 'AI ANALYTICS / PROJECT DIRECTION',
         title: 'Business Intelligence with AI',
         status: 'Concept exploration',
-        intro: 'An area I’m exploring alongside my business platforms: helping teams ask better questions of operational data.',
+        intro: 'An area Iâ€™m exploring alongside my business platforms: helping teams ask better questions of operational data.',
         sections: [
-          { title: 'The opportunity', text: 'IT operations involve reports, inventories, service information, and recurring questions. I’m interested in how AI could help make that information easier to understand.' },
+          { title: 'The opportunity', text: 'IT operations involve reports, inventories, service information, and recurring questions. Iâ€™m interested in how AI could help make that information easier to understand.' },
           { title: 'Ideas for the project', items: ['Ask questions about business and IT operations in everyday language.', 'Summarize information with a clear link back to its source.', 'Present useful trends and follow-up questions in a simple dashboard.'] },
           { title: 'Current stage', text: 'This is a concept for future project work. The chart in the showcase is a design illustration and does not represent live business data.' }
         ]
@@ -173,13 +174,13 @@
           link.href = project.url;
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
-          link.textContent = project.linkLabel + ' ↗';
+          link.textContent = project.linkLabel + ' â†—';
           links.append(link);
         }
         const contact = document.createElement('a');
         contact.className = 'text-link';
         contact.href = '#contact';
-        contact.textContent = 'Talk about a project →';
+        contact.textContent = 'Talk about a project â†’';
         contact.addEventListener('click', () => dialog.close());
         links.append(contact);
         dialog.showModal();
@@ -227,11 +228,11 @@
         return;
       }
       const topic = $('#contact-topic').value;
-      const subject = `${topic} — ${name}`;
+      const subject = `${topic} â€” ${name}`;
       const body = `Hi Adnan,\n\n${message}\n\nBest regards,\n${name}`;
       const mailto = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       const status = $('#form-status');
-      status.replaceChildren(document.createTextNode('Your draft is ready. If your email app didn’t open, '));
+      status.replaceChildren(document.createTextNode('Your draft is ready. If your email app didnâ€™t open, '));
       const link = document.createElement('a');
       link.href = mailto;
       link.target = '_blank';
