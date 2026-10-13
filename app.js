@@ -91,7 +91,7 @@
           { title: 'Installation and updates', text: 'Windows 0.5.25 checks published releases every five minutes independently of device reports, verifies update hashes and defers installation while support sessions are active. Enrollment and approved technicians are preserved. Older apps bootstrap through their existing daily updater. The installer and chat controls have automated validation; live two-computer chat and SYSTEM update rollout remain to be confirmed. Uninstalling the local agent leaves company inventory records separate.' },
           { title: 'Current stage', text: 'This is an active project. The dashboard graphic in this portfolio is an illustration. Android inventory reporting is available for enrolled devices. macOS/Linux have optional ClamAV command support; matching security interfaces, Android antivirus, iOS support, and full AV/EDR remain unfinished.' }
         ],
-        url: 'https://unified-it-ops.ak6335186.workers.dev/',
+        url: 'https://app.unified-it-ops.workers.dev/',
         linkLabel: 'Visit company sign-in'
       },
       fragrances: {

@@ -85,3 +85,8 @@ Microsoft pricing shows USD/AED equivalents at USD 1 = AED 3.6725 without adding
 Release 0.5.24 adds Licenses/Storage navigation below Microsoft Analyze’s header. Storage displays SharePoint D7 usage, allocated site quotas, files, activity and report dates. An on-demand site/library/folder browser lists metadata and visible sharing grants, named principals, inherited status and link audience. The feature requests additional delegated Reports.Read.All/Sites.Read.All approval. It does not alter permissions or download file contents. Allocated site quotas are not the shared tenant capacity, and delegated sharing results are not a complete effective-access audit.
 
 The remote host skips redundant SetCursorPos calls; the native viewer suppresses duplicate motion and cursor drawing and predicts its cursor locally. Windows unit checks passed, but actual cursor stability awaits two-PC confirmation. All 134 application/runtime/UI checks, TypeScript and production build passed. No real tenant report or additional consent was performed in this work session; live storage import requires company approval. Browser preview tooling timed out, so visual checks remain limited to server-rendered component validation. Only public-safe feature descriptions are published.
+
+
+## Live address verification — 13 October 2026
+
+Updated the profile and website project links to https://app.unified-it-ops.workers.dev/ after verifying that its company sign-in page responds successfully. The ALSAAD FRAGRANCES site also responds successfully at its existing address. This update preserves the portfolio layout and existing feature descriptions. Newer unpublished desktop fixes are not represented as deployed releases.
